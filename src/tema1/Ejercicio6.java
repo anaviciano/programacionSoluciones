@@ -1,7 +1,6 @@
 package tema1;
 import java.util.Scanner;
 
-
 public class Ejercicio6 {
 
 
@@ -10,7 +9,7 @@ public class Ejercicio6 {
             System.out.print("Escribe el valor del radio: ");
             double radius = scanner.nextDouble();
             double area = 3.14 * radius * radius;
-            //Double area = Math.PI * Math.pow(radius, 2);
+            //double area = Math.PI * Math.pow(radius, 2);
             System.out.println("El área es " + area);
         }
 

@@ -12,6 +12,7 @@ public class Ejercicio9 {
         System.out.println("Suma: " + (number1 + number2));
         System.out.println("Resta: " + (number1 - number2));
         System.out.println("Multiplicación: " + (number1 * number2));
+
         System.out.println("División: " + (number1 / number2));
     }
 }
