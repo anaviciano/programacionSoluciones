@@ -12,6 +12,7 @@ public class Ejercicio12 {
             int anio = scanner.nextInt();
 
             // Verificar si el año es bisiesto
+
             if ((anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0)) {
                 System.out.println(anio + " es un año bisiesto.");
             } else {
