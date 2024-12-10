@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/BusinessLogic/BusinessLogic.iml" filepath="$PROJECT_DIR$/src/BusinessLogic/BusinessLogic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataAccess/DataAccess.iml" filepath="$PROJECT_DIR$/DataAccess/DataAccess.iml" />
       <module fileurl="file://$PROJECT_DIR$/programacionSoluciones.iml" filepath="$PROJECT_DIR$/programacionSoluciones.iml" />
     </modules>
   </component>
