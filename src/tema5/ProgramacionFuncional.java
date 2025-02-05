@@ -1,6 +1,7 @@
 package tema5;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -32,5 +33,15 @@ public class ProgramacionFuncional {
         List<String> nombres =
         personas.stream().map(p -> p.getNombre()).collect(Collectors.toList());
         System.out.println("Nombres: " + nombres);
+
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
+
+        // Operaciones intermedias: filter y map
+        List<Integer> result = numbers.stream()
+                .filter(n -> n % 2 == 0) // Filtra números pares
+                .map(n -> n * 2)         // Multiplica cada número por 2
+                .collect(Collectors.toList()); // Operación terminal: collect
+
+        System.out.println(result); // Salida: [4, 8, 12]
     }
 }
