@@ -13,4 +13,11 @@ public class PersonaPF {
     public int getEdad() {
         return edad;
     }
+
+    public void setEdad(int edad) throws Exception{
+        if(edad <0){
+            throw new Exception("Edad no válida");
+        }
+            this.edad = edad;
+    }
 }
