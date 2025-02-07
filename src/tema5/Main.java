@@ -1,6 +1,7 @@
 package tema5;
 
 public class Main {
+
     public static void main(String[] args) throws Exception {
         System.out.println("Uso excepciones");
 
@@ -52,4 +53,5 @@ public class Main {
 
  */
     }
+
 }

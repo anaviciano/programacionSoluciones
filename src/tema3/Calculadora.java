@@ -14,7 +14,8 @@ public class Calculadora {
             return a - b;
         }
     public static boolean esPar(int numero) {
-        return numero %2 == 0;
+
+            return numero %2 == 0;
     }
 
 

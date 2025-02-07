@@ -27,12 +27,14 @@ class CalculadoraTest {
     public void tearDown() {
         System.out.println("aftereach");
     }
+
     @Test
     public void testMain() {
         System.out.println("main");
         String[] args = null;
         Calculadora.main(args);
     }
+
     @Test
     public void testSuma() {
         System.out.println("suma");
@@ -40,7 +42,7 @@ class CalculadoraTest {
         int b = 2;
         int expResult = 3;
         int result = Calculadora.suma(a, b);
-        assertEquals(expResult, result);
+        assertEquals(3, Calculadora.suma(a, b));
     }
     @Test
     public void testSuma_1() {
@@ -110,6 +112,7 @@ class CalculadoraTest {
     public void testEsPar(int n) {
         System.out.println("esPar");
         assertTrue(Calculadora.esPar(n));
+        //assertEquals(true, Calculadora.esPar(n));
     }
 
 

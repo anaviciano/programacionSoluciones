@@ -13,16 +13,17 @@ public class ProgramacionFuncional {
         personas.add(new PersonaPF("Carlos", 25));
         personas.add(new PersonaPF("Maria", 15));
         personas.add(new PersonaPF("Pedro", 30));
-        personas.forEach(p -> System.out.println(p.getNombre()));
 
-        List<PersonaPF> mayoresEdad =
-        personas.stream().filter(p -> p.getEdad() >= 18).toList();
+        personas.forEach(pepe -> System.out.println(pepe.getNombre()));
+
+        List<PersonaPF> mayoresEdad = personas.stream().filter(p -> p.getEdad() >= 18).toList();
 
         System.out.println("Lista mayores de edad:");
         mayoresEdad.forEach(p -> System.out.println(p.getNombre()));
 
         boolean hayMayorEdad =
                 personas.stream().anyMatch(p -> p.getEdad() >= 18);
+
         System.out.println("Hay mayores de edad: " + hayMayorEdad);
 
 
@@ -40,7 +41,12 @@ public class ProgramacionFuncional {
         List<Integer> result = numbers.stream()
                 .filter(n -> n % 2 == 0) // Filtra números pares
                 .map(n -> n * 2)         // Multiplica cada número por 2
-                .collect(Collectors.toList()); // Operación terminal: collect
+                .collect(Collectors.toList());
+
+        List<Integer> result2 = numbers.stream()
+                .filter(n -> n % 2 != 0) // Filtra números impares
+                .map(n -> n * 2)         // Multiplica cada número por 2
+                .collect(Collectors.toList());// Operación terminal: collect
 
         System.out.println(result); // Salida: [4, 8, 12]
     }
